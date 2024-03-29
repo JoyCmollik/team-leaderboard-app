@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <link href="/styles.css" rel="stylesheet">
+    <link href="/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h1 class="text-center text-3xl my-4">Admin</h1>
+        <form id="addPlayerForm" class="flex justify-center my-4">
+            <input type="text" id="playerName" placeholder="Player Name"
+                class="border-2 border-gray-200 rounded-lg p-2 mr-2">
+            <button type="submit" class="bg-blue-500 text-white rounded-lg p-2">Add Player</button>
+        </form>
+        <table class="table-auto w-full mt-8 rounded-lg overflow-hidden shadow-lg" id="playerList">
+            <thead>
+                <tr class="bg-blue-500 text-white">
+                    <th class="px-4 py-2">Name</th>
+                    <th class="px-4 py-2">Points</th>
+                    <th class="px-4 py-2">Add Points</th>
+                    <th class="px-4 py-2">Edit</th>
+                    <th class="px-4 py-2">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>
